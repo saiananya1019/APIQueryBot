@@ -1,20 +1,25 @@
 # APIQueryBot
 📝 Overview
+
 This chatbot is designed to assist users with SQL-related queries, providing real-time responses, query optimizations, and troubleshooting assistance. The bot integrates AI-driven natural language processing (NLP) with a robust SQL engine to analyze, interpret, and execute SQL queries.
 
 🚀 Features
+
 💡 SQL Query Understanding – Parses natural language queries and converts them into SQL.
 🛠️ Query Optimization – Suggests performance improvements.
 📊 Database Interaction – Supports MySQL and MongoDB.
 🔎 Error Detection – Identifies syntax errors and provides corrections.
 🗃 AI-Powered Responses – Uses an NLP model to interpret and generate SQL solutions.
+
 🏗 Technologies Used
 Python (Flask/FastAPI for backend)
 NLP (OpenAI/Gemini AI for query interpretation)
 Databases (MySQL, MongoDB)
 Frontend (React/HTML+CSS)
 API Integrations (OpenAI API, LangChain)
+
 🔑 API Key Setup
+
 This project requires an API key from OpenAI or Gemini to process NLP-based SQL query generation.
 
 Steps to Set Up API Key:
@@ -50,11 +55,15 @@ Set up your API keys as mentioned above.
 Run the application:
 python main.py  
 Access the chatbot at http://localhost:5000.
+
 🤖 Usage
+
 Type your SQL-related query.
 The chatbot interprets and generates the corresponding SQL query.
 If needed, modify and run the query in your database.
+
 📌 Future Enhancements
+
 Add support for PostgreSQL & Oracle.
 Improve natural language understanding.
 Implement speech-to-text for hands-free SQL assistance.
