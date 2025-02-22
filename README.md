@@ -1,69 +1,52 @@
-# APIQueryBot
-📝 Overview
+AI-Powered Chatbot - API Key Usage
 
-This chatbot is designed to assist users with SQL-related queries, providing real-time responses, query optimizations, and troubleshooting assistance. The bot integrates AI-driven natural language processing (NLP) with a robust SQL engine to analyze, interpret, and execute SQL queries.
+Overview
 
-🚀 Features
+This project is an AI-powered chatbot that leverages advanced NLP models to provide intelligent responses based on user queries. It integrates an external API key to access AI models for text generation and understanding.
 
-💡 SQL Query Understanding – Parses natural language queries and converts them into SQL.
-🛠️ Query Optimization – Suggests performance improvements.
-📊 Database Interaction – Supports MySQL and MongoDB.
-🔎 Error Detection – Identifies syntax errors and provides corrections.
-🗃 AI-Powered Responses – Uses an NLP model to interpret and generate SQL solutions.
+Features
 
-🏗 Technologies Used
-Python (Flask/FastAPI for backend)
-NLP (OpenAI/Gemini AI for query interpretation)
-Databases (MySQL, MongoDB)
-Frontend (React/HTML+CSS)
-API Integrations (OpenAI API, LangChain)
+Natural Language Processing (NLP): Understands and processes user inputs.
 
-🔑 API Key Setup
+API Key Integration: Uses an external API (e.g., OpenAI, Gemini, etc.) for AI-powered responses.
 
-This project requires an API key from OpenAI or Gemini to process NLP-based SQL query generation.
+Customizable Responses: Can be trained and modified for different use cases.
 
-Steps to Set Up API Key:
-Obtain your API key from:
-OpenAI: https://platform.openai.com/signup
-or
-Google Gemini: https://ai.google.dev/
+Multi-Turn Conversation: Handles context retention for a better chat experience.
 
-(optional)Create a .env file in the project directory and add:
-OPENAI_API_KEY=your_openai_api_key_here  
-GEMINI_API_KEY=your_gemini_api_key_here  
-Load the API key in your Python script:
-python
-import os  
-from dotenv import load_dotenv  
-load_dotenv()  
-openai_api_key = os.getenv("OPENAI_API_KEY")  
-gemini_api_key = os.getenv("GEMINI_API_KEY")  
-Make sure the .env file is included in your .gitignore to prevent exposing your keys.
-or 
-just add your API Key in your JavaScript using:
+Scalable: Can be deployed as a web app, integrated into chat platforms, or used for business automation.
+
+Installation
+
+Prerequisites
+
+Python 3.8+
+
+Virtual Environment (optional but recommended)
+
+Steps
+
+Clone the Repository
+git clone https://github.com/your-username/chatbot-project.git
+cd chatbot-project
+
+API Key Setup
+
+This chatbot requires an API key for accessing the AI model.
+
+1. Obtain an API Key
+
+Sign up for an API key from OpenAI, Google Gemini, or any AI provider you are using.
+
+2. Add your API key in JavaScript (its the easiest way in our project)
+
 let userMessage;
-const API_KEY = "add your API Key"; 
+const API_KEY = "Add your API key"; 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
-📥 Installation & Setup
-Clone the repository:
-git clone https://github.com/your-username/chatbot.git  
-cd chatbot  
-Install dependencies:
-pip install -r requirements.txt  
-Set up your API keys as mentioned above.
-Run the application:
-python main.py  
-Access the chatbot at http://localhost:5000.
+Usage
 
-🤖 Usage
+Run the chatbot using:
+python main.py
+You can interact with the chatbot via the command line or integrate it into a web interface.
 
-Type your SQL-related query.
-The chatbot interprets and generates the corresponding SQL query.
-If needed, modify and run the query in your database.
-
-📌 Future Enhancements
-
-Add support for PostgreSQL & Oracle.
-Improve natural language understanding.
-Implement speech-to-text for hands-free SQL assistance.
